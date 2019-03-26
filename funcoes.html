@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Js - RocketSeat</title>
+</head>
+<body>
+    <script>
+        function soma(numero1, numero2) { // Recebe parâmetros
+            var resultado = numero1 + numero2;  // Var resultado é vista apenas no escopo
+                                                // da function soma, então deve ser declarada
+                                                // novamente fora da function para ser vista
+            return resultado;
+        }
+
+        var resultado = soma(1, 2); // Parâmetros passados
+        console.log(resultado);
+    </script>
+</body>
+</html>

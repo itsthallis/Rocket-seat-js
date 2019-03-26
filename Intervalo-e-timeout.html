@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Js - RocketSeat</title>
+</head>
+<body>
+    <script>
+        function exibeAlgo(){
+            console.log('Hello World');
+        }
+
+       setInterval(exibeAlgo, 1000);    // Quando se quer executar a function direto,
+                                        // Escreve-se exibeAlgo(). Quando se quer apenas
+                                        // passar o escopo da função como parâmetro,
+                                        // escreve-se sem parenteses.
+                                    
+       setTimeout(exibeAlgo, 5000); // setTimeout() Depois de um tempo executa a função.
+                                    // Apenas uma vez.
+    </script>
+</body>
+</html>
