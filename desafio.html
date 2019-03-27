@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio 1</title>
+</head>
+<body>
+    <!-- <script>
+        // Exercício 1
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function mostraEndereco(){
+            var resultado = "O usuário mora em " + endereco.cidade + "/ " + endereco.uf + 
+                ", na " + endereco.rua + " com Nº " + endereco.numero + ".";
+            
+            return console.log( resultado )
+        }
+
+        mostraEndereco();
+    </script> -->
+
+    <!-- <script>
+        // Exercício 3
+        var skills = ["Javascript", "ReactJS", "React Native"]; // Array
+
+        function temHabilidade(skills) {
+            // Condição ternária verificando se no index [0] do array tem o valor "Javascript".
+            // var retorno = ( skills[0] == "Javascript" ) ? true : false;
+            
+            // indexOf() Pega o VALOR "Javascript" e verifica se ele está na posição 0 do array.
+            var retorno = ( skills.indexOf( "Javascript" ) == 0 ) ? true : false;
+            console.log( retorno );
+        }
+        
+        temHabilidade(skills);
+
+    </script> -->
+
+    <!-- <script>
+        // Exercício 4
+        function experiencia(anosEstudo) {
+            
+            if ( anosEstudo <= 2 ) {
+                console.log( "Iniciante" );
+            }
+
+            else if ( anosEstudo >= 3 && anosEstudo <= 5) {
+                console.log( "Intermediário" );
+            }
+
+            else if ( anosEstudo >= 6 && anosEstudo <= 7 ) {
+                console.log( "Avançado" );
+            }
+
+            else if ( anosEstudo > 7 ) {
+                console.log( "Jedi Master" );
+            }
+
+        }
+
+        var anosEstudo = 6;
+        experiencia(anosEstudo);
+        
+    </script> -->
+
+    <script>
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        function verificaHabilidade() {
+            for ( var hab in usuarios.habilidades ) {
+                console.log(hab);
+                return hab
+            }
+            return hab
+        }
+
+        function possuiHabilidade () {
+
+            var possui = "O" + usuarios.nome + " possui as habilidades: " + hab;
+            return console.log( possui )
+        };
+        
+        verificaHabilidade();
+    </script>
+</body>
+</html>
