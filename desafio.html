@@ -28,6 +28,19 @@
     </script> -->
 
     <!-- <script>
+        // Desafio 2
+        function pares(x, y) {
+            for (var i = x; i <= y; i++) {
+                if (i % 2 === 0) {
+                console.log(i);
+                }
+            }
+        }
+
+        pares(32, 321);
+    </script> -->
+
+    <!-- <script>
         // Exercício 3
         var skills = ["Javascript", "ReactJS", "React Native"]; // Array
 
@@ -72,6 +85,18 @@
     </script> -->
 
     <script>
+
+        function exibeHabilidades(x) {
+            for ( usuario of x ) {
+                console.log(
+                    "O "
+                    + usuario.nome
+                    + " possui as seguintes habilidades: "
+                    + usuario.habilidades.join(", ")
+                )
+            }
+        }
+
         var usuarios = [
             {
                 nome: "Diego",
@@ -83,21 +108,19 @@
             }
         ];
 
-        function verificaHabilidade() {
-            for ( var hab in usuarios.habilidades ) {
-                console.log(hab);
-                return hab
+        var usuarios2 = [
+            {
+                nome: "Diego2",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel2",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
             }
-            return hab
-        }
+        ];
 
-        function possuiHabilidade () {
-
-            var possui = "O" + usuarios.nome + " possui as habilidades: " + hab;
-            return console.log( possui )
-        };
-        
-        verificaHabilidade();
+        var x = usuarios;
+        exibeHabilidades(x);
     </script>
 </body>
 </html>
