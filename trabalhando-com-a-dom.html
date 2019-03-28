@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Js - RocketSeat</title>
+</head>
+<body>
+    <div id="app">
+        <input name="name" type="text" id="nome">
+        <input name="name2" type="text" id="nome2">
+        <button class="botao">Adicionar</button>
+    </div>
+    <script>
+        // var inputElement = document.getElementsByTagName
+        //     ('input')[1]    // Pega o segundo input pelo índice
+        
+        //  var inputElement = document.querySelector
+        //     (' div#app input ')     // querySelector consegue percorrer a DOM
+                                    // para trazer um único elemento 
+        
+        // var inputElement = document.querySelector
+        //     (' div#app input[name = name2] ') // Pega o input pelo atributo name
+
+        // var inputElement = document.querySelectorAll
+        //     (' div#app input ') // querySelectorAll traz todas as tags daquele tipo
+
+        var inputElement = document.querySelector(' input[name = name2]');
+        var btnElement = document.querySelector(' button.botao ');
+
+        btnElement.onclick = function() {
+            var text = inputElement.value; // Pega o que foi digitado no input
+            alert( text );
+        }
+
+        //console.log(inputElement);
+    </script>
+</body>
+</html>
