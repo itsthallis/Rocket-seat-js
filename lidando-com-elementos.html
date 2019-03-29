@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Js - RocketSeat</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="nome">
+    </div>
+
+    <script>
+        // Cria elemento 'a'
+        var linkElement = document.createElement('a');
+        // Passa atributo 'href' para linkElement
+        linkElement.setAttribute('href', 'http://google.com');
+
+        // Cria texto a ser inserido dentro do 'a'
+        var textElement = document.createTextNode('Acessar site do Google');
+        // Insere como elemento filho do 'a' o texto armazenado em textElement
+        linkElement.appendChild(textElement);
+
+        // Armazena em containerElement '#app'
+        var containerElement = document.querySelector('#app');
+        // Insere como filho do containerElement o linkElement
+        containerElement.appendChild(linkElement);
+        
+        // Remove elemento
+        var inputElement = document.querySelector('#nome');
+        containerElement.removeChild( inputElement )
+
+        // Direto | Remove pelo botão
+        // var test = containerElement.appendChild(
+        //     document.createElement('button')) // Cria botão
+        //             .setAttribute("id", "botao"); // Atribui Id
+                    
+        // var botao = document.querySelector('#botao'); //Seleciona botão
+
+        // botao.onclick = function() {
+        //     containerElement.removeChild( inputElement ) // Remove input
+        // };
+
+    </script>
+</body>
+</html>

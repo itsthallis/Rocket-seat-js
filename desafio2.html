@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio 2</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <!-- <script>
+        // Desafio 1
+        var mainContainer = document.querySelector( '#app' ); 
+        var btnredboxText = document.createTextNode( 'Clique para criar um quadrado vermelho' ); 
+        var btnredbox = document.createElement( 'button' );
+        var redbox =  document.createElement( 'div' );
+        
+        redbox.style.width = '100px';
+        redbox.style.height = '100px';
+        redbox.style.backgroundColor = '#f00';
+
+        mainContainer.appendChild( btnredbox );
+
+        btnredbox.setAttribute( 'id', 'btn-redbox' );
+        btnredbox.appendChild( btnredboxText );
+        btnredbox.onclick = function(){
+            mainContainer.appendChild( redbox )
+        }
+    </script> -->
+
+    <!-- <script>
+        // Desafio 2
+        var mainContainer = document.querySelector( '#app' ); 
+        var btnredboxText = document.createTextNode( 'Clique para criar um quadrado' ); 
+        var btnredbox = document.createElement( 'button' );
+        var redbox =  document.createElement( 'div' );
+        
+        redbox.style.width = '100px';
+        redbox.style.height = '100px';
+        redbox.style.backgroundColor = '#f00';
+        redbox.onmouseover = function() {
+            redbox.style.backgroundColor = newColor;
+        };
+
+        mainContainer.appendChild( btnredbox );
+
+        btnredbox.setAttribute( 'id', 'btn-redbox' );
+        btnredbox.appendChild( btnredboxText );
+        btnredbox.onclick = function(){
+            mainContainer.appendChild( redbox )
+        };
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        };
+        
+        var newColor = getRandomColor(); // #E943F0
+    </script> -->
+
+    <script>
+        var mainContainer = document.querySelector( '#app' ); 
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+
+        for ( nome of nomes ) {
+            var list = document.createElement( 'ul' );
+            var li = createElement( 'li' );
+            
+            li.appendChild( nome );
+            list.appendChild( li );
+        }
+    </script>
+</body>
+</html>
