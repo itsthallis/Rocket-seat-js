@@ -7,7 +7,9 @@
     <title>Desafio 2</title>
 </head>
 <body>
-    <div id="app"></div>
+    <ul></ul>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
 
     <!-- <script>
         // Desafio 1
@@ -63,17 +65,37 @@
         var newColor = getRandomColor(); // #E943F0
     </script> -->
 
+    <!-- <script>
+        // Desafio 3
+        var nomes = ['Diego', 'Gabriel', 'Lucas'];
+        var listElement = document.querySelector('ul');
+        for (nome of nomes) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nome);
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+        }
+    </script> -->
+
     <script>
-        var mainContainer = document.querySelector( '#app' ); 
-        var nomes = ["Diego", "Gabriel", "Lucas"];
+        var nomes = ['Diego', 'Gabriel', 'Lucas'];
+        var listElement = document.querySelector('ul');
+        var inputElement = document.querySelector('input');
+        
+        function addItem(text) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(text);
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+        }
 
+        function adicionar() {
+            addItem(inputElement.value);
+            inputElement.value = "";
+        }
 
-        for ( nome of nomes ) {
-            var list = document.createElement( 'ul' );
-            var li = createElement( 'li' );
-            
-            li.appendChild( nome );
-            list.appendChild( li );
+        for (nome of nomes) {
+            addItem(nome);
         }
     </script>
 </body>
